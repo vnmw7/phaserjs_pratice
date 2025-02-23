@@ -62,8 +62,8 @@ class GameScene extends Phaser.Scene {
   }
 
   targetHit() {
-    target.setY(0);
-    target.setX(Phaser.Math.Between(0, sizes.width - target.width));
+    this.target.y = 0;
+    this.target.setX(Phaser.Math.Between(0, sizes.width - this.target.width));
     this.points++;
   }
 }
